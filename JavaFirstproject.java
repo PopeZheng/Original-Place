@@ -45,10 +45,10 @@ public class HelloWorld {
 		}
 		}while(i !=7);
 		System.out.println("成功退出，感谢本次使用");
-		System.out.println("是否进入购买页面？（yes/no)");
+		System.out.println("是否进入购买页面？（y/n)");
 		Scanner sd=new Scanner(System.in);
 		response=sd.next().charAt(0);
-		}while (response=='yes');
+		}while (response=='y');
 		
 		
 		
