@@ -98,6 +98,7 @@ class Student(Person):
 	@property
 	def get_GPA(self):
 		return self._GPA
+	
 	def set_GPA(self,GPA):
 		self._GPA = GPA
 
