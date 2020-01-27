@@ -163,14 +163,3 @@ def insert_sort(origin_items):
 				break
 			print(sorted_items)
 	return sorted_items
-
-
-
-
-
-
-
-
-
-
-
