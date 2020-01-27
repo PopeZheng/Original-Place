@@ -141,6 +141,29 @@ def merge_sort(origin_items):
 	right = merge_sort(origin_items[mid:])
 	return merge(left,right)
 
+#insert_sort  
+def insert_sort(origin_items):
+	sorted_items = [origin_items[0]]
+	for i in range(1,len(origin_items)):
+		for j in range(i-1,-1,-1):
+			if sorted_items[j] > origin_items[i]:
+				if j == i-1:
+					sorted_items.append(sorted_items[j])
+				elif j in range(1,i-1):
+					sorted_items[j+1] = sorted_items[j]
+				else:
+					sorted_items[j+1] = sorted_items[j]
+					sorted_items[0] = origin_items[i]
+			else:
+				if j == i-1:
+					sorted_items.append(origin_items[i])
+				else:
+					sorted_items[j+1] = origin_items[i]
+				#print(sorted_items)
+				break
+			print(sorted_items)
+	return sorted_items
+
 
 
 
