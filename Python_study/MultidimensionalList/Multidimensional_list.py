@@ -35,6 +35,12 @@ def sum_column(matrix):
 		sum_column_list.append(total)
 	return sum_column_list
 
+def sumMajorDiagonal(matrix):
+	total = 0
+	for row in range(len(matrix)):
+		total += matrix[row][row]
+	return total
+
 #get row which has the max sum and the sum
 def maxsum_row(matrix):
 	max_rowsum = 0
